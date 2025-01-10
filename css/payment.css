@@ -1,0 +1,474 @@
+@import "./styles.css";
+
+/*-----------------------------payment---------------------*/
+.container {
+    display: grid;
+    padding: 0px;
+    width: 100%;
+    column-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+.payment-page {
+    display: grid;
+    width: 100%;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.payment-bloc {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.review-cart {
+    width: 120%;
+    height: 100%;
+    border: 2px solid rgb(190, 108, 169);
+    overflow: scroll;
+    border-radius: 5px;
+    position: static;
+}
+.nav-payment {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    column-gap: 250px;
+    background-color: rgb(251, 251, 122);
+    border: 1px solid;
+}
+.nav-payment p {
+    text-transform: uppercase;
+    font-style: italic;
+    color: blueviolet;
+    font-size: 20px;
+    font-family: fantasy;
+} 
+.article {
+    display: grid;
+    grid-template-rows: repeat(auto, 100px);
+    width: 100%;
+} 
+.article p{
+    margin-top: 30px;
+    font-weight: 500;
+} 
+.each-prod {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 38px;
+    border-bottom: 2px solid rgb(190, 108, 169);
+    padding: 3px 5px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+} 
+.img-bill img {
+    width: 65px;
+    height: 74px;
+    padding: 5px;
+    border: 1px solid white;
+    box-shadow: 3px 3px 25px rgb(0,0,0,0.2);
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+} 
+.bill {
+    display: flex;
+    margin-top: 100px;
+    column-gap: 30px;
+    border: 2px solid rgb(250, 207, 240);
+    background-color: rgb(151, 69, 131);
+    color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: left;
+    width: 100%;
+    height: 150px;
+} 
+.bill div {
+    width: 280px;
+    margin-left: 30px;
+} 
+
+.bill h3 {
+    cursor:pointer;
+    margin-left: 10px;
+} 
+/*---------------------rating------------------------*/
+.fidelity {
+    display: grid;
+    width: 90%;
+    height: 100%;
+    grid-template-rows: 320px 250px;
+    margin-left: 4vh;
+} 
+.rating {
+    display: grid;
+    width: 80%;
+    height: 100%;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+} 
+.rating-bloc {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 80px 300px;
+    
+} 
+.rating-text h2 {
+    margin-bottom: 35px;
+} 
+.rating-stars {
+    height: 300px;
+} 
+.stars {
+    border: 2px solid rgb(190, 108, 169);
+    border-radius: 7px;
+    height: 80px;
+    display: flex;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+} 
+.stars i {
+    font-size: 25px;
+    padding: 10px 10px;
+    cursor:pointer;
+} 
+.rating-stars form {
+    margin-bottom: 15px;
+    height: 300px;
+} 
+.area {
+    margin-bottom: 0px;
+} 
+fieldset {
+    display: grid;
+} 
+.btn-area {
+    margin-top: 5px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(190, 108, 169);
+    border: none;
+    cursor: pointer;
+} 
+.incorrect {
+    border-color: orangered;
+} 
+/*---------------------------sign page--------------------*/
+.sign-in {
+    display: grid;
+    width: 80%;
+    height: 260px;
+    border: 2px solid rgb(190, 108, 169);
+    margin-top: 35px;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+} 
+.register {
+    display: grid;
+    width: 380px;
+    height: 100%;
+    margin-left: 2vh;
+    grid-template-rows: 30px 180px 30px;
+    place-items: center;
+    align-items: center;
+} 
+.register a {
+    font-size: 18px;
+} 
+.label {
+    font-size: 28px;
+    
+} 
+.table {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin: 10px;
+} 
+.checkbox {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin: 5px 10px;
+    margin-right: 20px;
+} 
+.table input {
+    width: 230px;
+    height: 30px;
+} 
+.register form {
+    display: grid;
+    width: 400px;
+    text-align: right;
+} 
+.btn-form {
+    width: 150px;
+    height: 30px;
+    margin-right: 16px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(190, 108, 169);
+    border: none;
+    cursor: pointer;
+} 
+.href {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0px;
+    width: 100%;
+} 
+.href a {
+    font-size: 15px;
+} 
+.newly {
+    margin-right: 50px;
+} 
+.error-log {
+    color: red;
+    font-weight: 500;
+} 
+/*---------------------------------------------------------*/
+@media (max-width:1024px) {
+    .sign-in {
+        width: 80%;
+        margin-top: 15px;
+    } 
+    .register {
+        width: 380px;
+        margin-left: 2vh;
+    } 
+    .register a {
+        font-size: 18px;
+    } 
+    .label {
+        font-size: 28px; 
+    } 
+    .table {
+        display: flex;
+        justify-content: right;
+        gap: 30px;
+        margin: 10px;
+        margin-right: 3vh;
+    } 
+    .checkbox {
+        gap: 30px;
+        margin-right: 50px;
+    } 
+    .table input {
+        width: 160px;
+        height: 30px;
+    } 
+    .register form {
+        display: grid;
+        width: 400px;
+        text-align: right;
+    } 
+    form.get-discount {
+        width: 300px;
+    }
+    .fidelity {
+        display: grid;
+        width: 90%;
+        height: 100%;
+        grid-template-rows: 320px 250px;
+        margin-left: 4vh;
+    } 
+    .rating {
+        width: 80%;
+    }  
+    .rating-text h2 {
+        font-size: 98%;
+    }  
+    .btn-form {
+        width: 150px;
+        margin-right: 43px;
+    } 
+    .href {
+        width: 280px;
+        column-gap: 30px;
+    } 
+    .href a {
+        font-size: 12px;
+    } 
+    .bill {
+        column-gap: 10px;
+        width: 100%;
+    } 
+    .bill div {
+        width: 200px;
+        margin-left: 1vh;
+    } 
+    
+    .bill h3 {
+        font-size: 15px;
+    } 
+}
+@media (max-width:956px) {
+    .fidelity {
+        display: grid;
+        width: 90%;
+        height: 100%;
+        grid-template-rows: 320px 250px;
+        margin-left: 4vh;
+    } 
+    .rating {
+        width: 80%;
+    }  
+    .rating-text h2 {
+        font-size: 98%;
+    }  
+    .btn-form {
+        width: 150px;
+        margin-right: 43px;
+    } 
+    .href {
+        width: 280px;
+        column-gap: 30px;
+    } 
+    .href a {
+        font-size: 12px;
+    } 
+    .bill {
+        display: grid;
+        place-content: center;
+        column-gap: 10px;
+        width: 100%;
+        height: auto;
+    } 
+    .bill div {
+        width: 200px;
+        margin-left: -1vh;
+    } 
+    
+    .bill h3 {
+        font-size: 15px;
+        text-align: left;
+    } 
+    .payment-page {
+        width: auto;
+    }
+}
+
+@media (max-width:800px) {
+    .bill div {
+        width: 200px;
+        margin-left: -1vh;
+    } 
+    
+    .bill h3 {
+        font-size: 15px;
+        text-align: left;
+    } 
+    .payment-page {
+        width: 399px;
+    }
+    .container {
+       padding-left: 130px;
+    }
+}
+
+@media (max-width:596px) {
+    .fidelity {
+        width: 70%;
+        margin-left: -2vh;
+    } 
+    .rating {
+        width: 80%;
+    }  
+    .rating-text h2 {
+        font-size: 90%;
+    }  
+    .href {
+        width: 280px;
+        column-gap: 30px;
+    } 
+    .href a {
+        font-size: 12px;
+    } 
+    .bill {
+        display: grid;
+        place-content: center;
+        column-gap: 10px;
+        width: 100%;
+        height: auto;
+    } 
+    .bill div {
+        width: 200px;
+        margin-left: -1vh;
+    } 
+    
+    .bill h3 {
+        font-size: 15px;
+        text-align: left;
+    } 
+    .payment-page {
+        width: 269px;
+    }
+    .container {
+       padding-left: 80px;
+    }
+}
+
+@media (max-width:414px) {
+    .fidelity {
+        width: 70%;
+        margin-left: -2vh;
+    } 
+    .rating {
+        width: 80%;
+    }  
+    .rating-text h2 {
+        font-size: 90%;
+    }  
+    .bill h3 {
+        font-size: 15px;
+        text-align: left;
+    } 
+    .payment-page {
+        width: 389px;
+    }
+    .container {
+       padding-left: 300px;
+    }
+}
+
+@media (max-width:430px) {
+    .fidelity {
+        width: 70%;
+        margin-left: -2vh;
+    } 
+    .rating {
+        width: 80%;
+    }  
+    .rating-text h2 {
+        font-size: 90%;
+    }  
+    .bill h3 {
+        font-size: 15px;
+        text-align: left;
+    } 
+    .payment-page {
+        width: 389px;
+    }
+    .container {
+       padding-left: 300px;
+    }
+}

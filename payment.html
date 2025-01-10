@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Small E-shopping Payment Demo</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/payment.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://www.paypal.com/sdk/js?client-id=ASUYsRDN3mtgr72dtiOt1OAdhuPObE4w1nrcEZ8VqcuEuSwQigsU2IGZNQftttwytx4iHNNYov1KflZs"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+<body>
+    <!----------------------------NavBar----------------------->
+    <nav class="nav-bar">
+        <div class="logo">
+            <p>TOP<strong>.</strong><span class="girls">GIRLS</span></p>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">Products</a>
+            <a href="#">About us</a>
+            <a href="#">Contacts</a>
+        </div>
+        <div class="shop-bag">
+            <i class="fa fa-shopping-bag" aria-hidden="true">
+                <span class="bag-item">0</span>
+            </i>
+        </div>
+    </nav>
+<!----------------------------Section----------------------->
+    <section class="welcome">
+        <div class="hello">
+            <h2>Welcome to TOPGIRLS community</h2>
+            <h3>if you are gossip and like fashion mood, here is the place to be</h3>
+            <h4>feel free when visiting this page, massive discounts are on your way !</h4>
+        </div>
+    </section>
+<!----------------------------form----------------------->
+    <div class="container">
+        <div class="payment-page">
+            <div class="review-cart">
+                <div class="article" id="art">
+                   <!--<div class="each-prod">
+                        <p class="numb">id : </p>
+                        <img src="" alt="">
+                        <p class="name">article : </p>
+                        <p class="price">cost : $31</p>
+                        <p class="quantity">quantity : 1</p>
+                    </div>--> 
+                </div>
+                <div class="bill">
+                    <h3 class="total-bill"> Invoice : $ 100 </h3>
+                    <h3 class="method">Payment Methods : </h3>
+                    <div id="paypal-button-container"></div>
+                </div>
+            </div> 
+        </div> 
+        <div class="fidelity">
+            <div class="rating">
+                <div class="rating-bloc">
+                    <div class="rating-text">
+                        <h2>Please Rate and Comment to get 5% discount. Register/Sign-In to get 10%</h2>
+                    </div>
+                    <div class="rating-stars">
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <form method="get" name="comment" action="payment.html">
+                            <fieldset> <legend>Your Comment</legend> 
+                                <textarea class="area" name="comment" id="comment" cols="45" rows="5" required></textarea>
+                                <button class="btn-area">Validate</button>
+                            </fieldset>
+                            <p></p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sign-in">
+                <div class="register">
+                    <p class="error-log"></p>
+                    <form method="get" action="./discount.html" class="get-discount">
+                            <div class="table">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your Email Here" required>
+                            </div>
+                            <div class="table">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" required>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="">
+                                <label for="remember">remember me</label>
+                            </div>
+                            <div>
+                                <button class="btn-form" type="submit">Login</button> 
+                            </div>
+                    </form>
+                    <div class="href">
+                        <a class="newly" href="registration.html">Don't have an account? Register</a>
+                        <a href="#">mot de passe oublié ? </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-box">
+            <div class="link">
+                <h3>Buy</h3>
+                <div>
+                    <h5>Cartes cadeaux</h5>
+                    <h5>Liste de cadeaux Etsy</h5>
+                    <h5>Plan du site</h5>
+                    <h5>Premier choix</h5>
+                    <h5>Friperie</h5>
+                    <h5>Soldes</h5>
+                </div>
+            </div>
+            <div class="link">
+                <h3>Sale</h3>
+                <div>
+                    <h5>Cartes cadeaux</h5>
+                    <h5>Liste de cadeaux Etsy</h5>
+                    <h5>Plan du site</h5>
+                    <h5>Premier choix</h5>
+                    <h5>Friperie</h5>
+                    <h5>Soldes</h5>
+                </div>
+            </div>
+            <div class="link">
+                <h3>Help</h3>
+                <div>
+                    <h5>Cartes cadeaux</h5>
+                    <h5>Liste de cadeaux Etsy</h5>
+                    <h5>Plan du site</h5>
+                    <h5>Premier choix</h5>
+                    <h5>Friperie</h5>
+                    <h5>Soldes</h5>
+                </div>
+            </div>
+            <div class="link">
+                <h3>Join Us</h3>
+                <div>
+                    <h5>Cartes cadeaux</h5>
+                    <h5>Liste de cadeaux Etsy</h5>
+                    <h5>Plan du site</h5>
+                    <h5>Premier choix</h5>
+                    <h5>Friperie</h5>
+                    <h5>Soldes</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-------------------------Script-------------------------------->
+     <script src="./js/payment.js" defer></script>
+     <script src="./js/paypal.js"></script>
+</body>
+</html>

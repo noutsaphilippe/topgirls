@@ -1,0 +1,57 @@
+@import "./styles.css";
+@import "./payment.css";
+
+.container-discount {
+    display: grid;
+    padding: 0px;
+    width: 100%;
+    grid-template-rows: 60px 1fr;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.identity {
+    line-height: 10px;
+    margin-bottom: 15px;
+}
+.full-name {
+    font-size: large;
+    font-weight: 600;
+}
+.js-no {
+    margin-bottom: 3px;
+    text-decoration:line-through;
+}
+.js-yes {
+    font-size: 25px;
+    margin-top: 0;
+}
+/*-----------------------------------------------------*/
+@media (max-width:768px) {
+    .rating {
+        width: 80%;
+    }  
+    .payment-page {
+        width: 589px;
+    }
+    .container-discount {
+       padding-left: 10vh;
+    }
+}
+@media (max-width:1024px) {
+    .payment-page {
+        width: 689px;
+    }
+    .container-discount {
+       padding-left: 1vh;
+    }
+}
+@media (max-width:414px) {  
+    .payment-page {
+        width: 689px;
+    }
+    .container-discount {
+       padding-left: 35vh;
+    }
+}
